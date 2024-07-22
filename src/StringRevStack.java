@@ -18,3 +18,6 @@ public class StringRevStack {
         System.out.println(rev);
     }
 }
+
+
+//write a program to reverse a word in a sentence
