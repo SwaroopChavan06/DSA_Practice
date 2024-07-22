@@ -16,14 +16,14 @@ public class reverseAWordinSen {
                        rev = rev + st.pop();
                    }
                }
-               rev = rev + " ";
+               rev = rev + ' ';
             }
 
             while (!st.isEmpty()) {
                 rev = rev + st.pop();
             }
 
-            System.out.println(rev);
+            System.out.println(rev.trim());
         }
 }
 
