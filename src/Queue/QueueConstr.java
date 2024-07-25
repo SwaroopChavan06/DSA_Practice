@@ -12,6 +12,7 @@ public class QueueConstr {
         qu.add(280);
         qu.add(180);
         qu.add(390);
+
         qu.add(60);
         qu.add(200);
 
