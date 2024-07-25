@@ -17,7 +17,7 @@ public class SortQueue {
 
         while (!qu.isEmpty()){
             int temp = qu.poll();
-            while (!stk.isEmpty() && stk.peek() > temp){
+            while (!stk.isEmpty() && stk.peek() < temp){
                 qu.add(stk.pop());
             }
             stk.push(temp);
