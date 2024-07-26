@@ -1,11 +1,10 @@
 package PracticeQuestions;
 
-public class swapLinkedListElement {
+public class SwapLKElementEx6 {
 
     class Node {
         int data;
         Node next;
-
         Node(int data) {
             this.data = data;
             next = null;
@@ -13,17 +12,13 @@ public class swapLinkedListElement {
     }
 
     Node head;
-
     void add(int data) {
-
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
             return;
         }
-
         Node currNode = head;
-
         while (currNode.next != null) {
             currNode = currNode.next;
         }
@@ -34,7 +29,6 @@ public class swapLinkedListElement {
         if (head == null || head.next == null) {
             return;
         }
-
         Node newHead = head.next;
         Node prev = null;
         Node curr = head;
@@ -44,15 +38,12 @@ public class swapLinkedListElement {
             Node second = curr.next;
             second.next = curr;
             curr.next = nextPair;
-
             if (prev != null) {
                 prev.next = second;
             }
-
             prev = curr;
             curr = nextPair;
         }
-
         head = newHead;
     }
 
@@ -60,7 +51,6 @@ public class swapLinkedListElement {
 
     void print() {
         Node currNode = head;
-
         while (currNode != null) {
             System.out.print(currNode.data + " ");
             currNode = currNode.next;
@@ -71,7 +61,7 @@ public class swapLinkedListElement {
 //        Input : 1->2->3->4->5->6->NULL
 //        Output : 2->1->4->3->6->5->NULL
 
-        swapLinkedListElement list = new swapLinkedListElement();
+        SwapLKElementEx6 list = new SwapLKElementEx6();
 
         list.add(1);
         list.add(2);
@@ -80,12 +70,12 @@ public class swapLinkedListElement {
         list.add(5);
         list.add(6);
 
-        list.print();
-        System.out.println("After Swap : ");
 
+        System.out.println("Original List : ");
+        list.print();
+        System.out.println();
         list.swapLinkedList();
+        System.out.println("After Swap : ");
         list.print();
-
     }
-
 }
