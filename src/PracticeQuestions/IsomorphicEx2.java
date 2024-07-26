@@ -1,6 +1,6 @@
 package PracticeQuestions;
 
-public class IsomorphicExTwo {
+public class IsomorphicEx2 {
 
     public static boolean isIsomorphic(String str1, String str2) {
 
@@ -32,7 +32,7 @@ public class IsomorphicExTwo {
     }
 
     public static void main(String[] args) {
-        IsomorphicExTwo obj = new IsomorphicExTwo();
+        IsomorphicEx2 obj = new IsomorphicEx2();
         System.out.println(obj.isIsomorphic("src", "abk"));
     }
 }

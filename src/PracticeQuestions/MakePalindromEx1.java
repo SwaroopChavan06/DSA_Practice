@@ -1,6 +1,6 @@
 package PracticeQuestions;
 
-public class MakePalindromExOne {
+public class MakePalindromEx1 {
 
     int MakePalindrome(String str) {
 
@@ -30,7 +30,7 @@ public class MakePalindromExOne {
     }
 
     public static void main(String[] args) {
-        MakePalindromExOne obj = new MakePalindromExOne();
+        MakePalindromEx1 obj = new MakePalindromEx1();
         System.out.println(obj.MakePalindrome("aebcbda"));
     }
 }
