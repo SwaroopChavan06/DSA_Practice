@@ -3,27 +3,15 @@ package PracticeQuestions;
 public class IsomorphicEx2 {
 
     public static boolean isIsomorphic(String str1, String str2) {
-
         if (str1.length() != str2.length()) {
             return false;
         }
 
-        int[] map = new int[256];
+        int initialDifference = str2.charAt(0) - str1.charAt(0);
 
-        for (int i = 0; i < 256; i++) {
-            map[i] = -1;
-        }
-
-        for (int i = 0; i < str1.length(); i++) {
-            char ch1 = str1.charAt(i);
-            char ch2 = str2.charAt(i);
-
-            int ch1Index = ch1;
-            int ch2Index = ch2;
-
-            if (map[ch1Index] == -1) {
-                map[ch1Index] = ch2Index;
-            } else if (map[ch1Index] != ch2Index) {
+        for (int i = 1; i < str1.length(); i++) {
+            int currentDifference = str2.charAt(i) - str1.charAt(i);
+            if (currentDifference != initialDifference) {
                 return false;
             }
         }
@@ -32,7 +20,12 @@ public class IsomorphicEx2 {
     }
 
     public static void main(String[] args) {
-        IsomorphicEx2 obj = new IsomorphicEx2();
-        System.out.println(obj.isIsomorphic("src", "abk"));
+        System.out.println(isIsomorphic("aab", "xxg"));
+        System.out.println(isIsomorphic("aab", "xyz"));
     }
 }
+
+
+//Input: str1 = “aab”, str2 = “xxy”
+//Output: True
+//Explanation: ‘a’ is mapped to ‘x’ and ‘b’ is mapped to ‘y’.
