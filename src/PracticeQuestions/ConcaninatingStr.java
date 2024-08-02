@@ -19,11 +19,11 @@ public class ConcaninatingStr {
 
 
         if(A.length()>B.length()){
-           return A.length();
+            System.out.println(A.length());
         }else if(A.length()<B.length()){
-            return B.length();
+            System.out.println(B.length());
         }else {
-
+            System.out.println(" ");
         }
 
     }
