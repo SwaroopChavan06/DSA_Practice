@@ -16,10 +16,9 @@ package HashingDSA;
 //
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
-public class nonOverlappingSumEX8 {
+public class nonOverlappingSumEX7 {
     public static void main(String[] args) {
         Integer[] a = {1, 5, 3, 8};
 //        Integer[] b = {5, 4, 6, 7};

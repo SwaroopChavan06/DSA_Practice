@@ -11,7 +11,7 @@ import java.util.Map;
 
 import java.util.HashMap;
 
-public class sumPairEX6 {
+public class sumPairEX5 {
     public static void main(String[] args) {
         Integer[][] mat = {
                 {1, 3, 2, 4},

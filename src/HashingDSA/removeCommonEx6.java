@@ -24,9 +24,8 @@ package HashingDSA;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.NavigableMap;
 
-public class removeCommonEx7 {
+public class removeCommonEx6 {
     public static void main(String[] args) {
         Integer A[] = {1, 2, 3, 4};
         Integer B[] = {2, 3, 4, 5, 8};
