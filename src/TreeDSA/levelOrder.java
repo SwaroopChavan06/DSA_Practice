@@ -14,19 +14,14 @@ public class levelOrder {
             if(temp==null){
                 break;
             }
-
             System.out.println(temp.data+ " ");
-
             if (root.left != null) {
                 que.add(temp.left);
             }
             if (root.right != null) {
                 que.add(temp.right);
             }
-
-
         }
-
     }
 
         public static void main (String[]args){
@@ -38,8 +33,6 @@ public class levelOrder {
             root.left.left.right = new node(8);
             root.right.left = new node(6);
             root.right.right = new node(7);
-
             levelOreder(root);
-
         }
     }
