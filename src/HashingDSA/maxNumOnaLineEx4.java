@@ -13,8 +13,9 @@ package HashingDSA;
 
 public class maxNumOnaLineEx4 {
     public static void main(String[] args) {
-Integer[][] arr={{-1, 1}, {0, 0}, {1, 1},{2, 2}, {3, 3}, {3, 4}};
-int ans = maxPoints(arr);
+        Integer[][] arr = {{-1, 1}, {0, 0}, {1, 1}, {2, 2}, {3, 3}, {3, 4}};
+//        maxNumOnaLineEx4 obj = new maxNumOnaLineEx4();
+        int ans = maxPoints(arr);
         System.out.println(ans);
     }
 
