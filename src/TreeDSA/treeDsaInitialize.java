@@ -32,7 +32,6 @@ public class treeDsaInitialize {
 
     }
 
-
     static void preOrder(node root) {
         if (root == null) {
             return;
@@ -73,11 +72,8 @@ public class treeDsaInitialize {
         if (root.data > max) {
             max = root.data;
         }
-
         maxElement(root.left);
-
         maxElement(root.right);
-
     }
     static void sumElement(node root) {
 
@@ -85,11 +81,8 @@ public class treeDsaInitialize {
             return;
         }
         sum +=root.data;
-
         sumElement(root.left);
         sumElement(root.right);
-
-
     }
 
 
