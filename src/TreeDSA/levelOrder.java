@@ -11,10 +11,10 @@ public class levelOrder {
 
         while (!que.isEmpty()) {
             node temp = que.poll();
-            if(temp==null){
+            if (temp == null) {
                 break;
             }
-            System.out.println(temp.data+ " ");
+            System.out.println(temp.data + " ");
             if (root.left != null) {
                 que.add(temp.left);
             }
@@ -24,15 +24,15 @@ public class levelOrder {
         }
     }
 
-        public static void main (String[]args){
-            node root = new node(1);
-            root.left = new node(2);
-            root.right = new node(3);
-            root.left.left = new node(4);
-            root.left.right = new node(5);
-            root.left.left.right = new node(8);
-            root.right.left = new node(6);
-            root.right.right = new node(7);
-            levelOreder(root);
-        }
+    public static void main(String[] args) {
+        node root = new node(1);
+        root.left = new node(2);
+        root.right = new node(3);
+        root.left.left = new node(4);
+        root.left.right = new node(5);
+        root.left.left.right = new node(8);
+        root.right.left = new node(6);
+        root.right.right = new node(7);
+        levelOreder(root);
     }
+}

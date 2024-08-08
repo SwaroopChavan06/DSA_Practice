@@ -8,9 +8,7 @@ public class searchElement {
         if (root.data == target) {
             return true;
         }
-        if (findEle(root.left, target)) {
-            return true;
-        } else if (findEle(root.right, target)) {
+        if (findEle(root.left, target) || findEle(root.right, target) ){
             return true;
         } else {
             return false;
@@ -26,6 +24,6 @@ public class searchElement {
         root.left.left.right = new node(8);
         root.right.left = new node(6);
         root.right.right = new node(7);
-        System.out.println(findEle(root, 1));//find element
+        System.out.println(findEle(root, 2));//find element
     }
 }
