@@ -1,7 +1,7 @@
 package TreeDSA;
 
 public class searchElement {
-    static boolean findEle(node root, int target) {
+    static boolean findEle(Node root, int target) {
         if (root == null) {
             return false;
         }
@@ -16,14 +16,14 @@ public class searchElement {
 
     }
     public static void main(String[] args) {
-        node root = new node(1);
-        root.left = new node(2);
-        root.right = new node(3);
-        root.left.left = new node(4);
-        root.left.right = new node(5);
-        root.left.left.right = new node(8);
-        root.right.left = new node(6);
-        root.right.right = new node(7);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
+        root.left.left.right = new Node(8);
+        root.right.left = new Node(6);
+        root.right.right = new Node(7);
         System.out.println(findEle(root, 2));//find element
     }
 }

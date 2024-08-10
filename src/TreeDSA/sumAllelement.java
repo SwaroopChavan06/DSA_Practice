@@ -6,7 +6,7 @@ import java.util.Queue;
 public class sumAllelement {
     static int sum = 0;
 
-    static void sumElement(node root) {
+    static void sumElement(Node root) {
 
         if (root == null) {
             return;
@@ -16,13 +16,13 @@ public class sumAllelement {
         sumElement(root.right);
     }
 
-    static int levelOreder(node root) {
-        Queue<node> que = new LinkedList<>();
+    static int levelOreder(Node root) {
+        Queue<Node> que = new LinkedList<>();
         que.add(root);
         int allsum=root.data;
         while (!que.isEmpty()) {
 
-            node temp = que.poll();
+            Node temp = que.poll();
 
             if (temp == null) {
                 break;
@@ -39,7 +39,7 @@ public class sumAllelement {
         return allsum;
     }
 
-    static int treesumall(node root) {
+    static int treesumall(Node root) {
         if (root == null) {
             return 0;
         }
@@ -48,15 +48,15 @@ public class sumAllelement {
     }
 
     public static void main(String[] args) {
-        node root = new node(1);
-        root.left = new node(2);
-        root.right = new node(3);
-        root.left.left = new node(4);
-        root.left.right = new node(5);
-        root.left.left.right = new node(6);
-        root.left.right.left = new node(8);
-        root.right.left = new node(21);
-        root.right.right = new node(4);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
+        root.left.left.right = new Node(6);
+        root.left.right.left = new Node(8);
+        root.right.left = new Node(21);
+        root.right.right = new Node(4);
         sumElement(root);
         System.out.println(sum);
         System.out.println(levelOreder(root));

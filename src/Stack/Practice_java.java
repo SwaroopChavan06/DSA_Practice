@@ -1,3 +1,5 @@
+package Stack;
+
 public class Practice_java {
     public static void main(String[] args) {
         // The array elements

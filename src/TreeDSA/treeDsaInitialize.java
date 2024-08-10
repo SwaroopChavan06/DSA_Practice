@@ -1,21 +1,7 @@
 package TreeDSA;
 
-import java.util.*;
-
-class node {
-    int data;
-    node left;
-    node right;
-
-    node(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 public class treeDsaInitialize {
-    static boolean findEle(node root, int target) {
+    static boolean findEle(Node root, int target) {
         if (root == null) {
             return false;
         }
@@ -32,7 +18,7 @@ public class treeDsaInitialize {
 
     }
 
-    static void preOrder(node root) {
+    static void preOrder(Node root) {
         if (root == null) {
             return;
         }
@@ -41,7 +27,7 @@ public class treeDsaInitialize {
         preOrder(root.right);
     }
 
-    static void postOrder(node root) {
+    static void postOrder(Node root) {
         if (root == null) {
             return;
         }
@@ -51,7 +37,7 @@ public class treeDsaInitialize {
         System.out.print(root.data + " ");//postOrder
     }
 
-    static void inOrder(node root) {
+    static void inOrder(Node root) {
         if (root == null) {
             return;
         }
@@ -64,7 +50,7 @@ public class treeDsaInitialize {
     static int max = 0;
     static int sum = 0;
 
-    static void maxElement(node root) {
+    static void maxElement(Node root) {
 
         if (root == null) {
             return;
@@ -75,7 +61,7 @@ public class treeDsaInitialize {
         maxElement(root.left);
         maxElement(root.right);
     }
-    static void sumElement(node root) {
+    static void sumElement(Node root) {
 
         if (root == null) {
             return;
@@ -87,14 +73,14 @@ public class treeDsaInitialize {
 
 
     public static void main(String[] args) {
-        node root = new node(1);
-        root.left = new node(2);
-        root.right = new node(3);
-        root.left.left = new node(4);
-        root.left.right = new node(5);
-        root.left.left.right = new node(8);
-        root.right.left = new node(6);
-        root.right.right = new node(7);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
+        root.left.left.right = new Node(8);
+        root.right.left = new Node(6);
+        root.right.right = new Node(7);
 
         preOrder(root);
         System.out.println();
