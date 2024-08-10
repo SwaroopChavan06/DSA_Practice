@@ -47,31 +47,6 @@ public class treeDsaInitialize {
         inOrder(root.right);//
     }
 
-    static int max = 0;
-    static int sum = 0;
-
-    static void maxElement(Node root) {
-
-        if (root == null) {
-            return;
-        }
-        if (root.data > max) {
-            max = root.data;
-        }
-        maxElement(root.left);
-        maxElement(root.right);
-    }
-    static void sumElement(Node root) {
-
-        if (root == null) {
-            return;
-        }
-        sum +=root.data;
-        sumElement(root.left);
-        sumElement(root.right);
-    }
-
-
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
@@ -89,10 +64,7 @@ public class treeDsaInitialize {
         inOrder(root);
         System.out.println();
         System.out.println(findEle(root, 1));//find element
-        maxElement(root);
-        System.out.println(max);//max ele in BT
-        sumElement(root);
-        System.out.println(sum);//sum of all elements
+
 
 
     }

@@ -129,7 +129,4 @@ public class insertData {
 
 
 
-//WAP to check weather a tree is a sum tree
-//WAP to check weather two trees are identical or not
-//WAP to find the height of tree
 //WAP to find the right most element of tree
