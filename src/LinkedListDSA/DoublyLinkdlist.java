@@ -28,7 +28,7 @@ public class DoublyLinkdlist {
         }
         last.next=newNode;
         newNode.pre=last;
-        last= newNode
+        last= newNode;
     }
 
     void printdataall(){
