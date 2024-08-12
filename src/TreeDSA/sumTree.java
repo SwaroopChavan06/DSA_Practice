@@ -33,9 +33,9 @@ public class sumTree {
         root.right = new Node(6);
         root.left.left = new Node(2);
         root.left.right = new Node(2);
-//        root.right.right = new node(3);
-//        root.left.right.left = new node(3);
-//        root.left.right.right= new node(3);
+        root.right.right = new Node(3);
+        root.left.right.left = new Node(3);
+        root.left.right.right= new Node(3);
 
         System.out.print("Post-order: ");
         postOrder(root);

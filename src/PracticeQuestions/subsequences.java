@@ -92,7 +92,7 @@ public class subsequences {
 
 
     public static void main(String[] args) {
-        String str="geeksforgeeks";
+        String str="swaroop";
         String ans[]=findSubSequence(str);
 //        int t=longestPalindrom(ans);
 //        System.out.println(str.length()-t);
