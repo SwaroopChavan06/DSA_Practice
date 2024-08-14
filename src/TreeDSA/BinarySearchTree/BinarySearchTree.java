@@ -29,7 +29,7 @@ public class BinarySearchTree {
     public void inorderTraversal() {
         inorder(root);
     }
-
+//lowercomenanchester
     private void inorder(TreeNode root) {
         if (root != null) {
             inorder(root.left);
@@ -42,7 +42,6 @@ public class BinarySearchTree {
         return findNode(root, key);
     }
 
-    // Recursive helper method to find an element in the BST
     private boolean findNode(TreeNode root, int key) {
         if (root == null) {
             return false;
@@ -57,12 +56,10 @@ public class BinarySearchTree {
         }
     }
 
-    // Method to delete a node with the given key from the BST
     public void delete(int key) {
         root = deleteNode(root, key);
     }
 
-    // Recursive helper method to delete a node with the given key from the BST
     private TreeNode deleteNode(TreeNode root, int key) {
         if (root == null) {
             return null;
