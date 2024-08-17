@@ -147,8 +147,6 @@ public class ChocolateDistribution {
         int m2 = 5;
         System.out.println("Minimum difference is " + findMinDiff(arr2, arr2.length, m2));
 
-
-        sdfsf
         int[] arr3 = {12, 4, 7, 9, 2, 23, 25, 41, 30, 40, 28, 42, 30, 44, 48, 43, 50};
         int m3 = 7;
         System.out.println("Minimum difference is " + findMinDiff(arr3, arr3.length, m3));
