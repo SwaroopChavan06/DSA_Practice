@@ -22,6 +22,7 @@ public class Hashtable {
         tb.put(48, "maharashtra");
         System.out.println(tb);
 
+
         int arr[] = {12, 10, 45, 78, 79 ,46 , 42, 15, 19};
 
         for(Integer pt : tb.keySet()) {

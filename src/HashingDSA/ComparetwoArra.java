@@ -12,27 +12,30 @@ public class ComparetwoArra {
         HashMap<Integer, Integer> mpp = new HashMap<>();
 
         for (int i : arr) {
-            if (mp.containsKey(i)) {
-                int fre = mp.get(i);
-                fre++;
-                mp.put(i, fre);
-            } else {
-                mp.put(i, 1);
-            }
+//            if (mp.containsKey(i)) {
+//                int fre = mp.get(i);
+//                fre++;
+//                mp.put(i, fre);
+//            } else {
+//                mp.put(i, 1);
+//            }
+            mp.put(i, mp.getOrDefault(i, 0)+1);
         }
 
         for (int i : arrr) {
-            if (mpp.containsKey(i)) {
-                int fre = mpp.get(i);
-                fre++;
-                mpp.put(i, fre);
-            } else {
-                mpp.put(i, 1);
-            }
+//            if (mpp.containsKey(i)) {
+//                int fre = mpp.get(i);
+//                fre++;
+//                mpp.put(i, fre);
+//            } else {
+//                mpp.put(i, 1);
+//            }
+            mpp.put(i, mpp.getOrDefault(i, 0)+1);
         }
 
+
         for (Map.Entry<Integer, Integer> hmt : mp.entrySet()) {
-            if (!mpp.containsValue(hmt.getValue())) {
+            if (mpp.containsValue(hmt.getValue())) {
                 System.out.println("flag");
             }
         }
