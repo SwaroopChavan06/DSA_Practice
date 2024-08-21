@@ -1,0 +1,39 @@
+package Algorithms;
+
+public class insertionSortAlgo {
+    public static void insertionSorting(int[] arr) {
+
+        int n = arr.length;
+
+        for (int i = 1; i < n; i++) {
+            int Key = arr[i];
+            int j = i - 1;
+
+            while (j > 0 && arr[j] > Key) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = Key;
+        }
+    }
+    public static void printArray( int[] array){
+        int n = array.length;
+        for (int i = 0; i < n; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int[] arr={0,13,7,5};
+        System.out.println("Original array:");
+        printArray(arr);
+
+        insertionSorting(arr);
+
+        System.out.println("Sorted array:");
+        printArray(arr);
+
+    }
+
+}
