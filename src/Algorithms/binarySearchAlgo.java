@@ -10,7 +10,6 @@ public class binarySearchAlgo {
 
         while (low <= high) {
             int mid = (low + high) / 2;
-
             if (arr[mid] == target) {
                 flag = true;
                 break;

@@ -17,7 +17,7 @@ public class searchingLinearProgram {
         if(flag){
             System.out.println("Element Present at "+m);
         }else {
-            System.out.println("Element Not Found");
+            System.out.println("Not Found");
         }
     }
 }
