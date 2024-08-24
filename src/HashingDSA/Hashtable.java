@@ -14,7 +14,7 @@ public class Hashtable {
         tb.put(56, "ratnagiri");
         tb.put(48, "raygad");
 
-//        tb.remove(12);
+//        tb.remove(12);ui7yhiuhouhb
         System.out.println(tb.containsKey(56));
         System.out.println(tb.containsValue("konkan"));
         System.out.println(tb);
