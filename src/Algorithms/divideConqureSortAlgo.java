@@ -5,7 +5,7 @@ public class divideConqureSortAlgo {
     public static void merge(int[] arr, int l, int m, int r) {
         int n1 = m - l + 1;
         int n2 = r - m;
-//newe adedui7hruhougoughHUUHOHLIol
+//newe RTDXRYRDYTDYTDC
         int[] L = new int[n1];
         int[] R = new int[n2];
 //mhggeyguguogbl
