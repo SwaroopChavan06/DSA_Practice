@@ -16,3 +16,4 @@ public class subarraySum {
         System.out.println(count);
     }
 }
+//Sub array sum brutforce method
