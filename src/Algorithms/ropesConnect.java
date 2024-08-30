@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class ropesConnect {
     public static void main(String[] args) {
-        int arr[] = {4,3,2,6} ;
+        int arr[] = {2,3,4,6} ;
 //        int arr[] = {1,2,3} ;
         int n = arr.length;
         Arrays.sort(arr);

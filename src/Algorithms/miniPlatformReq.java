@@ -1,6 +1,6 @@
 package Algorithms;
 
-public class trainCost
+public class miniPlatformReq
 {
     static int arrivalDepartureTime(int arrival[], int departure[]){
         int i=0, j=0, cursum=0;
