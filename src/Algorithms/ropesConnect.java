@@ -9,14 +9,14 @@ public class ropesConnect {
 //        int arr[] = {1,2,3} ;
         int n = arr.length;
         Arrays.sort(arr);
-        int sum=0;
+        int sum=arr[0];
         int fsum=0;
-        for (int i = 0; i<n; i++) {
+        for (int i = 1; i<n; i++) {
             sum = sum + arr[i];
             fsum=fsum+sum;
             System.out.println(sum);
         }
-        fsum=fsum-arr[0];
+//        fsum=fsum-arr[0];
         System.out.println("Final Ans: "+fsum);
     }
 }
