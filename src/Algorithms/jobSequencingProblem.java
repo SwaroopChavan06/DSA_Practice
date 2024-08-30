@@ -47,6 +47,5 @@ public class jobSequencingProblem {
         for (int i = m-1; i>= k -1; i--){
             System.out.print(res[i][0]+" ");
         }
-
     }
 }
