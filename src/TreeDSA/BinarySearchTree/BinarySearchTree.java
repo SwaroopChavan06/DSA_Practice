@@ -122,3 +122,5 @@ public class BinarySearchTree {
 
     }
 }
+
+///ninary search tree
