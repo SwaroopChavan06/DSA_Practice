@@ -26,3 +26,6 @@ int coun=0;
         System.out.println(coun);
     }
 }
+
+
+// Ruppeee minimum needed to form a target price
