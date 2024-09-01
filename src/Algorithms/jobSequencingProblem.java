@@ -49,3 +49,6 @@ public class jobSequencingProblem {
         }
     }
 }
+
+
+///job sequencing using brutforce approach
