@@ -48,3 +48,4 @@ public class sumTree {
         }
     }
 }
+//sum tree optimized
