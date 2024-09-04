@@ -1,5 +1,8 @@
 package DynamicPrograming;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class FibonacciSeries {
 //    static int fib(int n) {
 //        if (n <= 1) {
@@ -7,6 +10,19 @@ public class FibonacciSeries {
 //        }
 //        return fib(n - 1) + fib(n - 2);
 //    }
+
+    private static Map<Integer, Integer> memo = new HashMap<>();
+    static int fibbb(int n){
+        if(n<=0) {
+            return 0;
+        }else if(n==1){
+            return 1;
+        }
+        if (!memo.containsKey(n)){
+            memo.put(n, fibbb(n-1)+fibbb(n-2));
+        }
+        return memo.get(n);
+    }
 
     static int[] fibo(int num){
 
@@ -26,6 +42,9 @@ public class FibonacciSeries {
         for (int i = 0; i < target; i++) {
             System.out.print(array[i]+" ");
         }
+
+        System.out.println();
+        System.out.println(fibbb(target));
     }
 }
 ///both using recursion and dynamic programing
