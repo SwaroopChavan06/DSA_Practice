@@ -122,5 +122,3 @@ public class BinarySearchTree {
 
     }
 }
-
-///ninary search tree practic and logical revised
