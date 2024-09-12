@@ -18,7 +18,6 @@ public class Dp1 {
         System.out.println(fibArr[2]);
         System.out.println(fibArr[6]);
         System.out.println(12);
-
-
     }
 }
+//DP fibonacci series
