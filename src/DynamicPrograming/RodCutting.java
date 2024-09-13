@@ -32,3 +32,5 @@ public class RodCutting {
         System.out.println("Maximum obtainable value: " + rodCutting(price3));  // Output: 3
     }
 }
+
+// rod cutting dp
