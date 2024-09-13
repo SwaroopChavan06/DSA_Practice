@@ -39,3 +39,5 @@ public class Platform {
 
     }
 }
+
+//  platform arrival and departaal
