@@ -28,9 +28,9 @@ public class NextGretestNum {
             }
             result.push(num);
         }
-//        while (!result.isEmpty()){
-//            System.out.println(result.pop());
-//        }
+        while (!result.isEmpty()){
+            System.out.println(result.pop());
+        }
     }
 
 }

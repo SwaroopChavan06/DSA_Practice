@@ -15,7 +15,6 @@ public class Platform {
         int j=0;
         int n=arv.length;
         while (n>i &&  n>j){
-
             if(arv[i]<=dep[j]){
                 platFormRed++;
                 i++;

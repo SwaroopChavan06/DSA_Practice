@@ -3,9 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DP1a {
-
     private static Map<Integer, Integer> memo = new HashMap<>();
-
     static int Fib(int n){
         if(n<=0)
             return 0;

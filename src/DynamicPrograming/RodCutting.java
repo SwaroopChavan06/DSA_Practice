@@ -2,14 +2,11 @@ package DynamicPrograming;
 
 public class RodCutting {
 
-    // Function to find the maximum obtainable value by cutting up the rod
     public static int rodCutting(int[] price) {
         int n = price.length;
-        int[] dp = new int[n + 1];  // dp array to store the maximum obtainable value for each length
-
-        // Build the dp array in bottom-up manner
+        int[] dp = new int[n + 1];
         for (int i = 1; i <= n; i++) {
-            int maxValue = Integer.MIN_VALUE;  // Initialize max value for the current length
+            int maxValue = Integer.MIN_VALUE;
             for (int j = 1; j <= i; j++) {
                 maxValue = Math.max(maxValue, price[j - 1] + dp[i - j]);
             }
